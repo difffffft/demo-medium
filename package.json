@@ -1,0 +1,17 @@
+{
+  "name": "x-human",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^31.0.2"
+  },
+  "dependencies": {
+    "moment": "^2.30.1",
+    "mysql2": "^3.10.1",
+    "sequelize": "^6.37.3"
+  }
+}
