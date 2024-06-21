@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js 3 CDN 模板</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+        }
+
+        #left-pane {
+            flex: 1;
+            border-right: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        #right-pane {
+            flex: 3;
+            overflow: hidden;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="left-pane">
+            <iframe src="https://medium.com/" frameborder="0"></iframe>
+        </div>
+        <div id="right-pane">
+            <iframe src="./plugin.html" frameborder="0"></iframe>
+        </div>
+    </div>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    message: 'Hello, Vue.js 3!'
+                };
+            },
+            template: `
+        <div>
+          <h1>{{ message }}</h1>
+          <p>欢迎使用 Vue.js 3 CDN 模板。</p>
+        </div>
+      `
+        });
+
+        app.mount('#app');
+    </script>
+</body>
+
+</html>
